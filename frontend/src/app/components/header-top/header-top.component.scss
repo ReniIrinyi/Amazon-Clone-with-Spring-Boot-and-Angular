@@ -1,0 +1,19 @@
+@import "../../../sass/0-base/variables";
+.header-top {
+  background-color: $black-light;
+  display: grid;
+  grid-template-columns: 5% 5% 60% 10% 5% 5% 10%;
+  padding: 0.5rem;
+  height: 100%;
+  &-block {
+  }
+}
+
+.block {
+  &-logo {
+    & .logo {
+      width: 5rem;
+      height: 2rem;
+    }
+  }
+}

@@ -1,6 +1,14 @@
+/*========================
+TYPOGHRAPHY 
+========================*/
 @font-face {
   font-family: "Officina-Sans-Std";
-  src: url("../../resources/Fonts/OfficinaSansStd-Bold.otf");
+  src: url("../../assets/Fonts/OfficinaSansStd-Bold.otf");
   font-weight: normal;
   font-style: normal;
 }
+
+//
+//Font-Sizes
+//
+$font-size--small: 11px;
