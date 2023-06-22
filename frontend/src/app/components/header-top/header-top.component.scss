@@ -3,7 +3,7 @@
   background-color: $black-light;
   display: grid;
   grid-template-columns: 5% 5% 60% 10% 5% 5% 10%;
-  padding: 0.5rem;
+  padding: $padding-small;
   height: 100%;
   &-block {
   }

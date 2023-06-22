@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SectionGwComponent } from './section-gw.component';
+import { SectionOrderedComponent } from './section-ordered.component';
 
-describe('SectionGwComponent', () => {
-  let component: SectionGwComponent;
-  let fixture: ComponentFixture<SectionGwComponent>;
+describe('SectionOrderedComponent', () => {
+  let component: SectionOrderedComponent;
+  let fixture: ComponentFixture<SectionOrderedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SectionGwComponent ]
+      declarations: [ SectionOrderedComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SectionGwComponent);
+    fixture = TestBed.createComponent(SectionOrderedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

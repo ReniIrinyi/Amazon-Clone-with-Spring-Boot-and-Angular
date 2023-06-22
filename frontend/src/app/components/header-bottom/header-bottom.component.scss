@@ -1,8 +1,7 @@
 @import "../../../sass/0-base/variables";
-@import "../../../sass/0-base/typography";
 .header-bottom {
   background-color: $grey--dark;
-  padding: 0.5rem;
+  padding: $padding-small;
   display: grid;
   grid-template-columns: 5% repeat(9, 1fr) 15%;
   grid-gap: 0;

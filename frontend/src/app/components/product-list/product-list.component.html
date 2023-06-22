@@ -1,5 +1,15 @@
 <div class="product-list-container">
-  <p *ngFor="let tempProduct of products">
-    {{ tempProduct.name }}: {{ tempProduct.unitPrice | currency : "EUR" }}
-  </p>
+  <div class="product" *ngFor="let tempProduct of products">
+    <div product-img>
+      <img src="{{ tempProduct.imgUrl }}" alt="" />
+    </div>
+    <div class="product-name">
+      <a href="#">
+        {{ tempProduct.name }}
+      </a>
+    </div>
+    <div class="product-price">
+      {{ tempProduct.unitPrice | currency : "EUR" }}
+    </div>
+  </div>
 </div>

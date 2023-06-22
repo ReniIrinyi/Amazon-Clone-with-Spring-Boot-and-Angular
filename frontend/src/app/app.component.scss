@@ -1,9 +1,11 @@
+@import "../../../frontend/src/sass/0-base/variables";
 //
 //App-Component
 //
 .app-container {
-  background-color: #fff;
-  display: block;
+  background-color: $grey--light;
+  display: grid;
+  grid-template-rows: 10rem 25rem 100rem 25rem 18rem 10rem;
   font-size: 14px;
   line-height: 20px;
 }

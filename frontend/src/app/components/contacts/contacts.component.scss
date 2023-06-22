@@ -1,0 +1,55 @@
+@import "../../../sass/0-base/variables";
+
+.links-container {
+  padding: $padding-regular 10rem $padding-regular 10rem;
+  background-color: $black-light;
+  font-size: $font-size--small;
+  color: $white--light;
+}
+.sitemap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  line-height: 110%;
+}
+.category {
+  padding: 0 $padding-small;
+  padding-top: $padding-small;
+  & a {
+    text-decoration: none;
+
+    & h6 {
+      color: $white--light;
+    }
+
+    & p {
+      color: $grey;
+    }
+  }
+}
+.contacts {
+  padding: 3rem 0;
+  &-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & li a {
+      color: $white--light;
+      text-decoration: none;
+    }
+
+    & li:not(:last-of-type) {
+      margin-right: $padding-small;
+    }
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    & a {
+      color: $white--light;
+      text-decoration: none;
+      margin-left: 0.5rem;
+    }
+  }
+}

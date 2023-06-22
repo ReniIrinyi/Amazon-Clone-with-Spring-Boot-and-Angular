@@ -2,8 +2,33 @@
 BASE COLORS
 ========================*/
 $yellow: #ff9900;
+$blue--light: #37475a;
+$blue--light-solid: #3a4553;
 $blue: #146eb4;
 $black: #000000;
 $black-light: #131921;
 $grey--dark: #232f3e;
+
+$grey: #999;
 $grey--light: #f2f2f2;
+$white--light: #ddd;
+
+/*========================
+TYPOGHRAPHY 
+========================*/
+@font-face {
+  font-family: "Officina-Sans-Std";
+  src: url("../../assets/Fonts/OfficinaSansStd-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*========================
+Font-Sizes 
+========================*/
+$font-size--small: 9px;
+$font-size--regular: 11px;
+/*========================
+Paddings
+========================*/
+$padding-small: 0.75rem;
+$padding-regular: 1.75rem;

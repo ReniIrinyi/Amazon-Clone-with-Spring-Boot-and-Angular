@@ -1,1 +1,10 @@
-
+.product {
+  display: grid;
+  height: 8rem;
+  width: 5rem;
+}
+.product-list-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
