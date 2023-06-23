@@ -1,0 +1,29 @@
+<!-- PRODUCT-LIST -->
+<div class="product-list-container">
+  <div class="product" *ngFor="let tempProduct of products">
+    <div class="product-card">
+      <div class="product-img">
+        <img
+          src="../../../../assets/Img/Products/books/placeholder-books.png"
+          alt=""
+        />
+      </div>
+      <div class="product-name">
+        <a href="#">
+          <p>
+            {{ tempProduct.name }}
+          </p>
+        </a>
+      </div>
+      <div class="product-price">
+        <p>
+          {{ tempProduct.unitPrice | currency : "EUR" }}
+        </p>
+      </div>
+      <div class="product-active">
+        <p>Lieferung am nächsten Werktag</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ENDS PRODUCT-LIST -->

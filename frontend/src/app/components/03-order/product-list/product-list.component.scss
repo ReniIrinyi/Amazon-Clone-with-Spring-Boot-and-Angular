@@ -1,0 +1,51 @@
+//********
+// PRODUCT-LIST
+//********
+@import "../../../../sass/0-base/variables";
+@import "../../../../sass/3-helpers/mixins";
+
+.product-list-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.product {
+  height: 15rem;
+  width: 7rem;
+  overflow: hidden;
+  display: flex;
+
+  &-card {
+    display: grid;
+    grid-template-rows: 1fr 20% 10% 10%;
+    background-color: $grey--light;
+    border-radius: 3px;
+  }
+  &-img img {
+    @include img(100%, 100%);
+  }
+  &-name {
+    & a {
+      color: $green--light;
+      text-decoration: none;
+      font-size: $font-size--small;
+      line-height: $line-height--small;
+    }
+  }
+  &-price {
+    & p {
+      font-weight: normal;
+      font-size: $font-size--regular;
+    }
+  }
+  &-active {
+    & p {
+      font-size: $font-size--small;
+      line-height: $line-height--small;
+    }
+  }
+}
+
+//********
+//********

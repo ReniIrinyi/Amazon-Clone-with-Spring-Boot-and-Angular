@@ -1,7 +1,7 @@
 package com.backend.config;
 
 import com.backend.entity.Product;
-import com.backend.entity.ProductCategory;
+import com.backend.entity.Category;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
@@ -18,7 +18,7 @@ public class RestConfiguration implements RepositoryRestConfigurer {
                 .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(unsupportedMethods));
 
         config.getExposureConfiguration()
-                .forDomainType(ProductCategory.class)
+                .forDomainType(Category.class)
                 .withItemExposure((metdata, httpMethods) -> httpMethods.disable(unsupportedMethods))
                 .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(unsupportedMethods));
 

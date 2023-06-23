@@ -1,7 +1,9 @@
 /*========================
 MIXINS
 ========================*/
-
+//
+// Buttons
+//
 @mixin base-btn {
   padding: 10px;
   border-radius: 10px;
@@ -10,3 +12,37 @@ MIXINS
   cursor: pointer;
   display: inline-block;
 }
+
+@mixin btn-with-light-border {
+  display: flex;
+  cursor: pointer;
+  border: $border--light;
+  border-radius: 3px;
+  width: 6rem;
+  height: 1.5rem;
+}
+//
+// Borders
+//
+@mixin border-light($color: $grey--light, $position: top) {
+  border-#{$position}: 1px solid $color;
+}
+
+//
+// Logo
+//
+@mixin logo-small {
+  width: 5rem;
+  height: 2rem;
+}
+
+//
+// Images
+//
+@mixin img($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
+/*========================
+========================*/

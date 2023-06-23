@@ -1,0 +1,67 @@
+//********
+// SHOPPING-CART
+//********
+@import "../../../../sass/3-helpers/mixins";
+@import "../../../../sass/0-base/variables";
+
+//********
+//********
+.cart {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background-color: $grey--light;
+
+  &-main {
+    display: grid;
+    grid-template-rows: 5% repeat(5, 1fr) 5%;
+    background-color: #fff;
+    height: 100%;
+    margin: $margin-small;
+  }
+
+  &-right {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 100%;
+    & .checkout {
+      margin: $margin-small;
+      background-color: #fff;
+    }
+
+    & .testimonials {
+      margin: $margin-small;
+      background-color: #fff;
+    }
+  }
+
+  &-img img {
+    @include img(60%, 70%);
+  }
+
+  &-item {
+    display: grid;
+    grid-template-columns: 5% 20% 75%;
+    padding: $padding-small;
+    @include border-light($grey--light, top);
+  }
+  &-value {
+    @include border-light($grey--light, top);
+    display: flex;
+    justify-content: end;
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+  }
+  &-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  &-checkbox {
+    display: flex;
+    flex-direction: row;
+  }
+}

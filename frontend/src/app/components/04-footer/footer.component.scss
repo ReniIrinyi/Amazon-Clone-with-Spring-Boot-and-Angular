@@ -1,0 +1,63 @@
+//********
+// FOOTER
+//********
+@import "../../../sass/0-base/variables";
+@import "../../../sass/3-helpers/mixins";
+
+.footer-container {
+  background-color: $grey--dark;
+  color: $white--light;
+  height: 100%;
+}
+
+.homelink {
+  background-color: $blue--light;
+  display: flex;
+  justify-content: center;
+  padding: $padding-small 0;
+  & p {
+    color: $white--light;
+    text-decoration: none;
+  }
+}
+
+.informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: $padding-regular 0;
+
+  &-col {
+    & h3 {
+      color: #fff;
+    }
+
+    & p {
+      color: $white--light;
+      text-decoration: none;
+      font-size: $font-size--small;
+    }
+  }
+}
+
+.language {
+  @include border-light($blue--light-solid, top);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: $padding-regular 0;
+  & a img {
+    margin-right: $margin-regular;
+    @include logo-small;
+  }
+
+  &-container:not(:last-of-type) {
+    margin-right: $margin-small;
+  }
+}
+
+.select-container {
+  @include btn-with-light-border;
+}
+//********
+//********

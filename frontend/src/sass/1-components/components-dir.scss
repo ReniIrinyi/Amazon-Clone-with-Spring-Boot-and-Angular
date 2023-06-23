@@ -3,36 +3,44 @@
 COMPONENTS STYLES
 ***************************
 */
-
 //
 //App-Component
 //
 @import "../../app/app.component.scss";
 //
+//Header
+//
+@import "../../app/components/00-header/header.component.scss";
+@import "../../app/components/00-header/header-top/header-top.component.scss";
+@import "../../app/components/00-header/header-bottom/header-bottom.component.scss";
+//
 //Startpage
 //
-@import "../../app/components/01-startpage/section-hero/section-hero.component.scss";
-@import "../../app/components/01-startpage/start-home/start-home.component.scss";
+@import "../../app/components/01-home/hero/hero.component.scss";
+@import "../../app/components/01-home/home.component.scss";
 //
 //Checkout
 //
-@import "../../app/components/02-checkout/checkout-home/checkout-home.component.scss";
 @import "../../app/components/02-checkout/shopping-cart/shopping-cart.component.scss";
 //
 //Order
 //
+@import "../../app/components/03-order/product-list/product-list.component.scss";
 @import "../../app/components/03-order/order-home/order-home.component.scss";
+@import "../../app/components/03-order/section-ordered/section-ordered.component.scss";
+//
+//Footer
+//
+@import "../../app/components/04-footer/footer.component.scss";
+@import "../../app/components/04-footer/contacts/contacts.component.scss";
 //
 //Helpers
 //
-@import "../../app/components/04-helpers/button/button.component.scss";
-@import "../../app/components/04-helpers/searchbar/searchbar.component.scss";
-//
-//Other Components
-//
-@import "../../app/components/product-list/product-list.component.scss";
-@import "../../app/components/header/header.component.scss";
-@import "../../app/components/header-top/header-top.component.scss";
-@import "../../app/components/header-bottom/header-bottom.component.scss";
-@import "../../app/components/header-right/header-right.component.scss";
-@import "../../app/components/footer/footer.component.scss";
+@import "../../app/components/05-helpers/button/button.component.scss";
+@import "../../app/components/05-helpers/searchbar/searchbar.component.scss";
+@import "../../app/components/05-helpers/carousel/carousel.component.scss";
+@import "../../app/components/05-helpers/sidebar/sidebar.component.scss";
+/*!
+**************************
+**************************
+!*/

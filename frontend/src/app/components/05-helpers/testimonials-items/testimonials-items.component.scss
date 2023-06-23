@@ -1,0 +1,19 @@
+@import "../../../../sass/0-base/variables";
+
+.testimonials-items {
+  background-color: #fff;
+  margin: $margin-small;
+}
+.testimonials-item {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+}
+
+img {
+  width: 5rem;
+  height: 7rem;
+}

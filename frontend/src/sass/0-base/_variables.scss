@@ -1,34 +1,60 @@
 /*========================
-BASE COLORS
+VARIABLES
 ========================*/
 $yellow: #ff9900;
+
+$green--light: #007185;
+
 $blue--light: #37475a;
 $blue--light-solid: #3a4553;
 $blue: #146eb4;
-$black: #000000;
-$black-light: #131921;
-$grey--dark: #232f3e;
 
-$grey: #999;
-$grey--light: #f2f2f2;
+$black-light: #131921;
+$black: #000000;
+
 $white--light: #ddd;
 
-/*========================
-TYPOGHRAPHY 
-========================*/
+$grey--light-solid: #f2f2f2;
+$grey--light: #e7e7e7;
+$grey: #999;
+$grey--dark: #232f3e;
+
+//
+//Fonts
+//
 @font-face {
   font-family: "Officina-Sans-Std";
   src: url("../../assets/Fonts/OfficinaSansStd-Bold.otf");
   font-weight: normal;
   font-style: normal;
 }
-/*========================
-Font-Sizes 
-========================*/
+//
+//Font-Size
+//
 $font-size--small: 9px;
 $font-size--regular: 11px;
-/*========================
-Paddings
-========================*/
+//
+//Padding
+//
 $padding-small: 0.75rem;
 $padding-regular: 1.75rem;
+$padding-big: 3rem;
+$padding-xxl: 10rem;
+//
+//Margin
+//
+$margin-tiny: 0.5rem;
+$margin-small: 0.75rem;
+$margin-regular: 1.75rem;
+$margin-big: 3rem;
+//
+//Line-height
+//
+$line-height--small: 1.2;
+$line-height--regular: 1;
+//
+//Border
+//
+$border--light: $grey--light 0.6px solid;
+/*========================
+========================*/

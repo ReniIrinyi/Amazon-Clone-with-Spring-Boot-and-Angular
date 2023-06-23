@@ -1,0 +1,25 @@
+//********
+// SEARCHBAR
+//********
+@import "../../../../sass/0-base/variables";
+
+.searchbar {
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  background-color: #fff;
+}
+
+.button {
+  &-right {
+    background-color: $yellow;
+    &--select {
+    }
+  }
+  &-left {
+    background-color: $grey--light;
+    &--search {
+    }
+  }
+}
+//********
+//********

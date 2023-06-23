@@ -1,1 +1,77 @@
-<p>shopping-cart works!</p>
+<!-- SHOPPING-CART -->
+<div class="shopping-cart cart">
+  <div class="cart-main">
+    <div class="cart-header">
+      <h2>Einkaufswagen</h2>
+      <a href="#">
+        <p>Auswahl aller Artikel aufheben</p>
+      </a>
+    </div>
+    <div class="cart-item" *ngFor="let tempProduct of products">
+      <form class="cart-checbox" action="#">
+        <input type="checkbox" />
+      </form>
+      <div class="cart-img">
+        <img
+          src="../../../../assets/Img/Products/books/placeholder-books.png "
+          alt=""
+        />
+      </div>
+      <div class="cart-details">
+        <h4>{{ tempProduct.name }}</h4>
+        <p>{{ tempProduct.unitPrice }}</p>
+        <form action="#">
+          <div class="cart-checkbox">
+            <input type="checkbox" />
+            <p>Dies ist ein Geschenk</p>
+            <a href="#">
+              <p>Erfahre mehr</p>
+            </a>
+          </div>
+          <div class="cart-options">
+            <select name="" id=""></select>
+            <a href="#">
+              <p>Löschen</p>
+            </a>
+            <a href="#">
+              <p>Auf die Merkliste</p>
+            </a>
+            <a href="#">
+              <p>Weitere Artikel wie diese</p>
+            </a>
+            <a href="#">
+              <p>Teilen</p>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="cart-bottom">
+      <div class="cart-value">
+        <p>Summe (2 Artikel):</p>
+        <p>13,94 EUR</p>
+      </div>
+    </div>
+  </div>
+  <div class="cart-right">
+    <div class="checkout">
+      <p>Summe (2 Artikel):</p>
+      <p>13.94 EUR</p>
+      <form action="#">
+        <input type="checkbox" />
+      </form>
+      <app-button></app-button>
+    </div>
+    <div class="testimonials">
+      <p>Verwandte Produkte</p>
+    </div>
+  </div>
+</div>
+<div>
+  <a href="#">Bestellung archivieren</a>
+</div>
+<div>
+  <app-pagination></app-pagination>
+</div>
+
+<!-- ENDS SHOPPING-CART -->

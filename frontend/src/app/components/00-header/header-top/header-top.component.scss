@@ -1,0 +1,25 @@
+//********
+// HEADER-TOP COMPONENT
+//********
+
+@import "../../../../sass/0-base/variables";
+@import "../../../../sass/3-helpers/mixins";
+.header-top {
+  background-color: $black-light;
+  display: grid;
+  grid-template-columns: 5% 5% 60% 10% 5% 5% 10%;
+  padding: $padding-small;
+  height: 100%;
+  &-block {
+  }
+}
+
+.block {
+  &-logo {
+    & .logo {
+      @include logo-small;
+    }
+  }
+}
+//********
+//********
